@@ -168,7 +168,8 @@ export default function Home() {
   const [game, setGame] = useState<CanvasClass>();
   const [context, setContext] = useState<CanvasRenderingContext2D>();
   const [canvas, setCanvas] = useState<HTMLCanvasElement>();
-  const [canvasRef, {width, height}] = useElementSize();
+  // const canvasRef = useRef<HTMLDivElement>(null);
+  const [canvasRef, {width, height}] = useElementSize<HTMLCanvasElement>();
   
   useInterval(() => {
     game?.loop();
