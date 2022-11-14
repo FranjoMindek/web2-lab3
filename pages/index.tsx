@@ -118,9 +118,9 @@ class CanvasClass {
     this.context.textBaseline = "top";
     this.context.fillText("Clicked boxes: " + this.clickedEntities + "/" + this.maxEntities, this.canvas.width - 10, 10);
     if (this.showClicked) {
-      this.context.fillText("Toggle show clciked [ ]", this.canvas.width - 10, 40);
+      this.context.fillText("Toggle show clicked [ ]", this.canvas.width - 10, 40);
     } else {
-      this.context.fillText("Toggle show clciked [X]", this.canvas.width - 10, 40);
+      this.context.fillText("Toggle show clicked [X]", this.canvas.width - 10, 40);
     }
     
   }
